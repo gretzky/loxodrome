@@ -1,6 +1,6 @@
 # loxodrome
 
-Navigational algorithms and functions
+Navigational algorithms and tools
 
 ## Usage
 
@@ -36,11 +36,11 @@ Converts a bearing to a given compass windrose direction.
 
 Converts a number from one unit to another.
 
-| Param    | Type                                      | Description         | Default      |
-| -------- | ----------------------------------------- | ------------------- | ------------ |
-| distance | `number`                                  | distance to convert | **Required** |
-| from     | [`DistanceUnit`](/src/types/distance.ts)) | original unit       | **Required** |
-| to       | [`DistanceUnit`](/src/types/distance.ts)) | unit to convert to  | **Required** |
+| Param    | Type                                     | Description         | Default      |
+| -------- | ---------------------------------------- | ------------------- | ------------ |
+| distance | `number`                                 | distance to convert | **Required** |
+| from     | [`DistanceUnit`](/src/types/distance.ts) | original unit       | **Required** |
+| to       | [`DistanceUnit`](/src/types/distance.ts) | unit to convert to  | **Required** |
 
 ### `ddToDMS(dd: number, direction: "latitude" | "longitude"): string`
 
