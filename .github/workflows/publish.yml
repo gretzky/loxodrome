@@ -20,4 +20,4 @@ jobs:
           version: 7
           run_install: true
       - run: pnpm test
-      - run: pnpm run build --if-present
+      - run: pnpm run build
