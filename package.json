@@ -5,8 +5,7 @@
   "author": "Sara Pope <sara@thepope.dev>",
   "license": "MIT",
   "keywords": [
-    "navigation",
-    "bearing"
+    "geodesy"
   ],
   "repository": {
     "type": "git",

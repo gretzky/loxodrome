@@ -1,6 +1,6 @@
 # loxodrome
 
-Navigational algorithms and tools
+Geodesy and navigational functions
 
 ## Usage
 
