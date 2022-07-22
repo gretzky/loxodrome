@@ -1,4 +1,4 @@
-import { CompassPoints, Windrose, WindroseDirections } from "./types";
+import { CompassPoints, Windrose, WindroseDirection } from "./types";
 
 /**
  * getWindroseDirections - returns an array of directions for a given number of compass points
@@ -8,7 +8,7 @@ import { CompassPoints, Windrose, WindroseDirections } from "./types";
 export function getWindroseDirections(
   compassPoints: CompassPoints
 ): Windrose[] {
-  const windrose = Object.values(WindroseDirections);
+  const windrose = Object.values(WindroseDirection);
 
   if (compassPoints === 32) {
     return windrose;

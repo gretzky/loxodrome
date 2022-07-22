@@ -108,7 +108,7 @@ Returns whether or not 2 points are within a certain statue mile distance from e
 
 ### `vincenty({ from, to }): number`
 
-Returns the geodetic distance between 2 points using the [Vincenty inverse formula](https://en.wikipedia.org/wiki/Vincenty%27s_formulae).
+Returns the geodetic distance in kilometers between 2 points using the [Vincenty inverse formula](https://en.wikipedia.org/wiki/Vincenty%27s_formulae).
 
 | Param | Type                                       | Description          | Default      |
 | ----- | ------------------------------------------ | -------------------- | ------------ |

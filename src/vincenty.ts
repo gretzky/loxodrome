@@ -2,7 +2,7 @@ import { round, toRadians } from "./math";
 import { Coordinates } from "./types";
 
 /**
- * vincenty - returns the geodetic distance between 2 points in meters using the vincenty inverse formula
+ * vincenty - returns the geodetic distance between 2 points in kilometers using the vincenty inverse formula
  *
  * original script by Chris Veness
  *
@@ -82,6 +82,6 @@ export function vincenty({ from, to }: Record<string, Coordinates>): number {
               (-3 + 4 * cos2σM * cos2σM))),
     s = b * A * (σ - deltaσ);
 
-  // round to 1mm precision
-  return round(s, 3);
+  // round to 1mm precision and convert to km
+  return round(s * 0.001, 3);
 }

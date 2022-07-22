@@ -1,4 +1,5 @@
-import { round } from "./math";
+import { Windrose4Direction } from "./types";
+import { DMS, Hemisphere, Hemispheres } from "./types/degrees";
 
 /**
  * ddToDMS - converts decimal degrees to decimal minutes
@@ -6,23 +7,21 @@ import { round } from "./math";
  * @param degrees - decimal degrees
  * @param direction - latitude or longitude
  */
-export function ddToDMS(
-  dd: number,
-  direction: "latitude" | "longitude"
-): string {
+export function ddToDMS(dd: number, direction: Hemisphere): DMS {
+  const isLongitude = direction === Hemispheres.longitude;
+
   const dir =
     dd < 0
-      ? direction === "latitude"
-        ? "E"
-        : "N"
-      : direction === "longitude"
-      ? "W"
-      : "S";
+      ? isLongitude
+        ? Windrose4Direction.w
+        : Windrose4Direction.s
+      : isLongitude
+      ? Windrose4Direction.e
+      : Windrose4Direction.n;
 
-  const deg = Math.abs(dd) | 0;
-  const frac = Math.abs(dd) - deg;
-  const min = (frac * 60) | 0;
-  const sec = round(frac * 3600 - min * 60) / 100;
+  const deg = 0 | (dd < 0 ? (dd = -dd) : dd);
+  const min = 0 | (((dd += 1e-9) % 1) * 60);
+  const sec = (0 | (((dd * 60) % 1) * 6000)) / 100;
 
-  return deg + "°" + min + "'" + sec + '"' + dir;
+  return `${deg}° ${min}' ${sec}" ${dir}`;
 }

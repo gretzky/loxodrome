@@ -1,7 +1,7 @@
 export enum DistanceUnits {
-  km = "kilometer",
-  mi = "mile",
-  nm = "nautical_mile",
+  km = "km",
+  mi = "mi",
+  nm = "nm",
 }
 
 export type DistanceUnit = `${DistanceUnits}` | DistanceUnits;

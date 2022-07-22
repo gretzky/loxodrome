@@ -1,4 +1,4 @@
-export enum WindroseDirections {
+export enum WindroseDirection {
   n = "N",
   nbe = "NbE",
   nne = "NNE",
@@ -32,46 +32,46 @@ export enum WindroseDirections {
   nnw = "NNW",
   nbw = "NbW",
 }
-export type Windrose32 = `${WindroseDirections}` | WindroseDirections;
+export type Windrose32 = `${WindroseDirection}` | WindroseDirection;
 
-export enum Windrose16Directions {
-  n = WindroseDirections.n,
-  nne = WindroseDirections.nne,
-  ne = WindroseDirections.ne,
-  ene = WindroseDirections.ene,
-  e = WindroseDirections.e,
-  ese = WindroseDirections.ese,
-  se = WindroseDirections.se,
-  sse = WindroseDirections.sse,
-  s = WindroseDirections.s,
-  ssw = WindroseDirections.ssw,
-  sw = WindroseDirections.sw,
-  wsw = WindroseDirections.wsw,
-  w = WindroseDirections.w,
-  wnw = WindroseDirections.wnw,
-  nw = WindroseDirections.nw,
-  nnw = WindroseDirections.nnw,
+export enum Windrose16Direction {
+  n = WindroseDirection.n,
+  nne = WindroseDirection.nne,
+  ne = WindroseDirection.ne,
+  ene = WindroseDirection.ene,
+  e = WindroseDirection.e,
+  ese = WindroseDirection.ese,
+  se = WindroseDirection.se,
+  sse = WindroseDirection.sse,
+  s = WindroseDirection.s,
+  ssw = WindroseDirection.ssw,
+  sw = WindroseDirection.sw,
+  wsw = WindroseDirection.wsw,
+  w = WindroseDirection.w,
+  wnw = WindroseDirection.wnw,
+  nw = WindroseDirection.nw,
+  nnw = WindroseDirection.nnw,
 }
-export type Windrose16 = `${Windrose16Directions}` | Windrose16Directions;
+export type Windrose16 = `${Windrose16Direction}` | Windrose16Direction;
 
-export enum Windrose8Directions {
-  n = WindroseDirections.n,
-  ne = WindroseDirections.ne,
-  e = WindroseDirections.e,
-  se = WindroseDirections.se,
-  s = WindroseDirections.s,
-  sw = WindroseDirections.sw,
-  w = WindroseDirections.w,
-  nw = WindroseDirections.nw,
+export enum Windrose8Direction {
+  n = WindroseDirection.n,
+  ne = WindroseDirection.ne,
+  e = WindroseDirection.e,
+  se = WindroseDirection.se,
+  s = WindroseDirection.s,
+  sw = WindroseDirection.sw,
+  w = WindroseDirection.w,
+  nw = WindroseDirection.nw,
 }
-export type Windrose8 = `${Windrose8Directions}` | Windrose8Directions;
+export type Windrose8 = `${Windrose8Direction}` | Windrose8Direction;
 
-export enum Windrose4Directions {
-  n = WindroseDirections.n,
-  e = WindroseDirections.e,
-  s = WindroseDirections.s,
-  w = WindroseDirections.w,
+export enum Windrose4Direction {
+  n = WindroseDirection.n,
+  e = WindroseDirection.e,
+  s = WindroseDirection.s,
+  w = WindroseDirection.w,
 }
-export type Windrose4 = `${Windrose4Directions}` | Windrose4Directions;
+export type Windrose4 = `${Windrose4Direction}` | Windrose4Direction;
 
-export type Windrose = `${Windrose32}` | WindroseDirections;
+export type Windrose = `${Windrose32}` | WindroseDirection;
