@@ -1,0 +1,30 @@
+{
+  "name": "@gretzky/loxodrome",
+  "version": "0.1.1",
+  "description": "navigational function tools",
+  "author": "Sara Pope <sara@thepope.dev>",
+  "license": "MIT",
+  "keywords": [
+    "navigation",
+    "bearing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gretzky/loxodrome"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "prettier --write src",
+    "build": "pnpm run lint && tsup src/index.ts --format esm,cjs --dts"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4"
+  }
+}
