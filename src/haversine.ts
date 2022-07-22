@@ -4,7 +4,8 @@ import { getRhumbLine } from "./getRhumbLine";
 
 /**
  * haversine - great-circle distance in kilometers between 2 points calculated using the haversine formula
- *  * a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
+ *
+ * a = sin²(Δφ/2) + cos φ1 ⋅ cos φ2 ⋅ sin²(Δλ/2)
  * c = 2 ⋅ atan2( √a, √(1−a) )
  *
  * φ = latitude, λ = longitude
@@ -12,7 +13,6 @@ import { getRhumbLine } from "./getRhumbLine";
  * @param from - coordinates of the start point
  * @param to - coordinates of the end point
  * @param useRhumbLine - whether or not to return the distance along a rhumb line
- * @returns
  */
 export function haversine({
   from,
