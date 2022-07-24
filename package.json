@@ -1,6 +1,6 @@
 {
   "name": "@gretzky/loxodrome",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "navigational function tools",
   "author": "Sara Pope <sara@thepope.dev>",
   "license": "MIT",
@@ -20,7 +20,8 @@
   "scripts": {
     "test": "jest",
     "lint": "prettier --write src",
-    "build": "pnpm run lint && tsup src/index.ts --format esm,cjs --dts"
+    "build": "pnpm run lint && tsup src/index.ts --format esm,cjs --dts",
+    "prepublish": "pnpm run lint && pnpm run test && pnpm run build"
   },
   "devDependencies": {
     "@types/jest": "^28.1.6",
