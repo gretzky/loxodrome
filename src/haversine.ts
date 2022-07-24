@@ -1,4 +1,4 @@
-import { DistanceUnit, Coordinates } from "./types";
+import { DistanceUnits, Coordinates } from "./types";
 import { toRadians } from "./math";
 import { getRhumbLine } from "./getRhumbLine";
 

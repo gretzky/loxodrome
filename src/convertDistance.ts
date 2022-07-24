@@ -1,6 +1,6 @@
-import { DistanceUnit } from "./types";
+import { DistanceUnits } from "./types";
 
-export const CONVERSION_POINTS: Record<string, number> = {
+export const DISTANCE_CONVERSION_POINTS: Record<string, number> = {
   km_mi: 0.621371,
   km_nm: 0.5399568,
   mi_km: 1.609344016,
@@ -22,10 +22,10 @@ export function convertDistance({
   to,
 }: {
   distance: number;
-  from: DistanceUnit;
-  to: DistanceUnit;
+  from: DistanceUnits;
+  to: DistanceUnits;
 }): number {
   const conversionPoint = `${from}_${to}`;
 
-  return distance * CONVERSION_POINTS[conversionPoint];
+  return distance * DISTANCE_CONVERSION_POINTS[conversionPoint];
 }

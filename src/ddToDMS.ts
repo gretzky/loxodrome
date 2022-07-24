@@ -1,5 +1,5 @@
 import { Windrose4Direction } from "./types";
-import { DMS, Hemisphere, Hemispheres } from "./types/degrees";
+import { DMS, Hemispheres, Hemisphere } from "./types/degrees";
 
 /**
  * ddToDMS - converts decimal degrees to decimal minutes
@@ -7,8 +7,8 @@ import { DMS, Hemisphere, Hemispheres } from "./types/degrees";
  * @param degrees - decimal degrees
  * @param direction - latitude or longitude
  */
-export function ddToDMS(dd: number, direction: Hemisphere): DMS {
-  const isLongitude = direction === Hemispheres.longitude;
+export function ddToDMS(dd: number, direction: Hemispheres): DMS {
+  const isLongitude = direction === Hemisphere.longitude;
 
   const dir =
     dd < 0

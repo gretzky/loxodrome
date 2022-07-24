@@ -34,13 +34,23 @@ Converts a bearing to a given compass windrose direction.
 
 ### `convertDistance({ distance, from, to }): number`
 
-Converts a number from one unit to another.
+Converts a distance measurement from one distance unit to another.
 
-| Param    | Type                                     | Description         | Default      |
-| -------- | ---------------------------------------- | ------------------- | ------------ |
-| distance | `number`                                 | distance to convert | **Required** |
-| from     | [`DistanceUnit`](/src/types/distance.ts) | original unit       | **Required** |
-| to       | [`DistanceUnit`](/src/types/distance.ts) | unit to convert to  | **Required** |
+| Param    | Type                                      | Description         | Default      |
+| -------- | ----------------------------------------- | ------------------- | ------------ |
+| distance | `number`                                  | distance to convert | **Required** |
+| from     | [`DistanceUnits`](/src/types/distance.ts) | original unit       | **Required** |
+| to       | [`DistanceUnits`](/src/types/distance.ts) | unit to convert to  | **Required** |
+
+### `convertSpeed({ speed, from, to }): number`
+
+Converts a speed measurement from one unit to another.
+
+| Param | Type                                | Description        | Default      |
+| ----- | ----------------------------------- | ------------------ | ------------ |
+| speed | `number`                            | speed to convert   | **Required** |
+| from  | [`SpeedUnits`](/src/types/speed.ts) | original unit      | **Required** |
+| to    | [`SpeedUnits`](/src/types/speed.ts) | unit to convert to | **Required** |
 
 ### `ddToDMS(dd: number, direction: "latitude" | "longitude"): string`
 

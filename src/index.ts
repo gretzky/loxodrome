@@ -1,6 +1,7 @@
 export * from "./bearingDistanceTo";
 export * from "./bearingToDirection";
 export * from "./convertDistance";
+export * from "./convertSpeed";
 export * from "./ddToDMS";
 export * from "./dmsToDD";
 export * from "./getCenterOfCoordinates";

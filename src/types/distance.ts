@@ -1,7 +1,7 @@
-export enum DistanceUnits {
+export enum DistanceUnit {
   km = "km",
   mi = "mi",
   nm = "nm",
 }
 
-export type DistanceUnit = `${DistanceUnits}` | DistanceUnits;
+export type DistanceUnits = `${DistanceUnit}` | DistanceUnit;
